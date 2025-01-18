@@ -1,14 +1,14 @@
-name: Log Email Workflow
+name: Email Workflow
 
 on:
   push:
     branches:
-      - main  # Replace 'main' with your default branch name
-  workflow_dispatch:  # Allows manual triggering
+      - main
+  workflow_dispatch: # Allows manual triggering
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Display Email
-        run: echo "My email is 23ds2000055@ds.study.iitm.ac.in"
+      - name: Display Email 23ds2000055@ds.study.iitm.ac.in
+        run: echo "Hello, 23ds2000055@ds.study.iitm.ac.in"

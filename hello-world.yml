@@ -1,15 +1,17 @@
-name: Display Email in GitHub Actions
+name: Test Workflow
 
 on:
   push:
-  workflow_dispatch:
+    branches:
+      - main  # Replace 'main' with your default branch name
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Show Email Address
+      - name: Display Email
         run: echo "My email is 23ds2000055@ds.study.iitm.ac.in"

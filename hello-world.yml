@@ -1,0 +1,15 @@
+name: Display Email in GitHub Actions
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Show Email Address
+        run: echo "My email is 23ds2000055@ds.study.iitm.ac.in"
